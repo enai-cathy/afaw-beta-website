@@ -2,22 +2,22 @@ import React from "react";
 
 const Carousel = ({ slides, id = "header-carousel" }) => (
   <div className="container-fluid p-0 h-100">
-    <div id={id} className="carousel slide h-100" data-bs-ride="carousel">
-      <div className="carousel-inner h-100">
+    <div id={id} className="carousel slide h-80" data-bs-ride="carousel">
+      <div className="carousel-inner h-80">
         {slides.map((slide, idx) => (
           <div
-            className={`carousel-item h-100${idx === 0 ? " active" : ""}`}
+            className={`carousel-item h-80${idx === 0 ? " active" : ""}`}
             key={idx}
-            style={{ height: "100vh", overflow: "hidden" }}
+            style={{ height: "80vh", overflow: "hidden" }}
           >
             <img
-              className="w-100 h-100 carousel-img"
+              className="w-100 h-80 carousel-img"
               src={slide.img}
               alt={slide.alt}
               style={{ 
                 objectFit: "cover", 
                 objectPosition: "center",
-                height: "100vh",
+                height: "80vh",
                 width: "100%"
               }}
             />
@@ -25,11 +25,11 @@ const Carousel = ({ slides, id = "header-carousel" }) => (
       <style>
         {`
           .carousel-item {
-            height: 100vh !important;
+            height: 80vh !important;
             overflow: hidden !important;
           }
           .carousel-img {
-            height: 100vh !important;
+            height: 80vh !important;
             width: 100% !important;
             object-fit: cover !important;
             object-position: center !important;
@@ -43,7 +43,7 @@ const Carousel = ({ slides, id = "header-carousel" }) => (
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(6, 32, 33, 0.8);                 //Background opacity for the image
+            background: rgba(4, 59, 61, 0.47);                 //Background opacity for the image
             z-index: 5;
           }
           .carousel-control-prev,
@@ -55,10 +55,10 @@ const Carousel = ({ slides, id = "header-carousel" }) => (
               padding: 0 20px;
             }
             .carousel-caption h1 {
-              font-size: 2rem !important;
+              font-size: 2.2em !important;
             }
             .carousel-caption p {
-              font-size: 1rem !important;
+              font-size: 1.2rem !important;
             }
           }
         `}
@@ -95,7 +95,7 @@ const Carousel = ({ slides, id = "header-carousel" }) => (
         ))}
       </div>
       {/* Controls */}
-      <button
+      {/* <button
         className="carousel-control-prev"
         type="button"
         data-bs-target={`#${id}`}
@@ -112,7 +112,7 @@ const Carousel = ({ slides, id = "header-carousel" }) => (
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
-      </button>
+      </button> */}
     </div>
   </div>
 );

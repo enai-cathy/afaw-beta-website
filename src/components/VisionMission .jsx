@@ -4,7 +4,7 @@ import "../styles/VisionMissionObjectives.css";
 const VisionMissionObjectives = () => {
   return (
     <>
-    <section className="Feautes mt-4 section">
+    <section className="Feautes  section">
         <div className="container">
             {/* about us */}
             <div className="row">

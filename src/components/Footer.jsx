@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn small-font-size" data-wow-delay="0.1s">
+    <div className="container-fluid bg-dark text-white-50 footer pt-5 wow fadeIn small-font-size" data-wow-delay="0.1s">
       <div className="container-fluid py-5 px-4">
         <div className="row g-5">
 

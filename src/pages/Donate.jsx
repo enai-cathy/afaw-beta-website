@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 
 const Donate = () => {
   const PRODUCTION_API_BASE = "https://afaw-beta-api.onrender.com/api";
@@ -131,17 +131,17 @@ const Donate = () => {
       </Helmet>
 
       <Layout>
-        <Header title="Donate" current="donate" />
+        {/* <Header title="Donate" current="donate" /> */}
 
         <div
-          className="container-fluid donate my-5 py-5"
+          className="container-fluid donate py-5"
           style={{
             backgroundImage: `url('img/pipe.jpg')`,
             backgroundAttachment: "fixed",
             backgroundSize: "cover",
           }}
         >
-          <div className="container py-5">
+          <div className="container mt-5 py-5">
             <div className="row g-5 align-items-start">
               {/* Left Side Text */}
               <div className="col-lg-6 h-100 bg-white p-5 rounded shadow-sm">
